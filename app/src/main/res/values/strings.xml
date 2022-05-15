@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Myipad WebSocket</string>
+    <string name="account">000000@xxxxzx.lexuewang.cn:8003</string>
+    <string name="start_websocket_server">启动服务器</string>
+    <string name="connect">连接到平板</string>
+    <string name="check">客户端校验</string>
+    <string name="remove_limit_hw">华为解除限制</string>
+    <string name="wipe_data_hw">华为清除数据</string>
+    <string name="enable_usb_hw">华为启用USB</string>
+    <string name="remove_limit_lx">联想解除限制</string>
+    <string name="wipe_data_lx">联想清除数据</string>
+    <string name="enable_usb_lx">联想启用USB</string>
+    <string name="wipe_data_sx">三星清除数据</string>
+    <string name="remove_limit_sx">三星解除限制</string>
+    <string name="lock_screen">上课锁定平板</string>
+    <string name="unlock_screen">上课解锁平板</string>
+    <string name="launch_activity">启动指定活动</string>
+    <string name="send_message">发送指定信息</string>
+    <string name="tablet_vibrator">平板自身震动</string>
+    <string name="tablet_beep">平板自身响铃</string>
+    <string name="screen_on">平板自动亮屏</string>
+    <string name="connect_option">连接选项</string>
+    <string name="jump_to_git">跳转至项目地址</string>
+    <string name="github">Github</string>
+    <string name="function_option">功能选项</string>
+</resources>
