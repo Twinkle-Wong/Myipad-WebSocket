@@ -12,7 +12,7 @@
 
 > 软件截图：
 
-![](C:\Users\Shelter\Desktop\preview.png)
+![](https://github.com/HexoCustomPass/Myipad-WebSocket/blob/main/preview.png)
 
 | 功能列表/操控型号 | BZT-W09 | TBX605M | SM-P350 |
 | :---------------: | :-----: | :-----: | :-----: |
