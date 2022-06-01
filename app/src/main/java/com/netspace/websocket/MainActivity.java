@@ -36,7 +36,9 @@ public class MainActivity extends Activity {
     public Button remove_limit_sx;
     public Button lock_screen;
     public Button unlock_screen;
-    public Button launch_activity;
+    public Button launch_device_admin;
+    public Button launch_terminal;
+    public Button launch_safe_mode;
     public Button send_message;
     public Button tablet_vibrator;
     public Button tablet_beep;
@@ -108,18 +110,15 @@ public class MainActivity extends Activity {
         unlock_screen.setOnClickListener(view113 ->
                 Broadcast("{\"guid\":\"357e6f2e7a0049ea8c9238eb1229cc39\",\"expire\":600,\"content\":\"UnLockScreen\",\"from\":\"system\"}")
         );
-        //启动活动
-        launch_activity = findViewById(R.id.launch_activity);
-        launch_activity.setOnClickListener(view -> {
-            AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
-            final EditText editText = new EditText(MainActivity.this);
-            editText.setText("'com.android.settings.DeviceAdminSettings‘, 'com.android.settings', null");
-            builder.setTitle("启动指定活动");
-            builder.setMessage("仿照输入提示替换活动即可");
-            builder.setView(editText);
-            builder.setPositiveButton("启动", (dialog, whichButton) -> Broadcast("{\"guid\":\"357e6f2e7a0049ea8c9238eb1229cc39\",\"expire\":600,\"content\":\"RunScript launchIntent" + "(" + editText.getText().toString()+ ")" + "\",\"from\":\"system\"}"));
-            builder.show();
-        });
+        //启动设备管理
+        launch_device_admin = findViewById(R.id.launch_device_admin);
+        launch_device_admin.setOnClickListener(view -> Broadcast("{\"guid\":\"357e6f2e7a0049ea8c9238eb1229cc39\",\"expire\":600,\"content\":\"RunScript launchIntent('com.android.settings.DeviceAdminSettings', 'com.android.settings', null)\",\"from\":\"system\"}"));
+        //启动管理终端
+        launch_terminal = findViewById(R.id.launch_terminal);
+        launch_terminal.setOnClickListener(view -> Broadcast("{\"guid\":\"357e6f2e7a0049ea8c9238eb1229cc39\",\"expire\":600,\"content\":\"RunScript launchIntent('jackpal.androidterm.Term', 'com.netspace.myipad', null)\",\"from\":\"system\"}"));
+        //启动安全模式
+        launch_safe_mode = findViewById(R.id.launch_safe_mode);
+        launch_safe_mode.setOnClickListener(view -> Broadcast("{\"guid\":\"357e6f2e7a0049ea8c9238eb1229cc39\",\"expire\":600,\"content\":\"RunScript launchIntent('com.netspace.library.activity.SafeModeActivity', 'com.netspace.myipad', null)\",\"from\":\"system\"}"));
         //发送信息
         send_message = findViewById(R.id.send_message);
         send_message.setOnClickListener(view -> {

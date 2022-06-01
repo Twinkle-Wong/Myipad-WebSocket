@@ -209,11 +209,11 @@
                 >
 
                 <Button
-                    android:id="@+id/launch_activity"
+                    android:id="@+id/launch_device_admin"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/launch_activity" />
+                    android:text="@string/launch_device_admin" />
 
                 <Button
                     android:id="@+id/send_message"
@@ -221,6 +221,29 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/send_message" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <Button
+                    android:id="@+id/launch_terminal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/launch_terminal" />
+
+                <Button
+                    android:id="@+id/launch_safe_mode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/launch_safe_mode" />
 
 
             </LinearLayout>
